@@ -1,0 +1,48 @@
+/* Para telas menores que 576px (como smartphones em modo retrato) */
+@media only screen and (max-width: 575px) {
+  html {
+    font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+  }
+
+  main {
+    padding: 20px 0; /* Reduz o preenchimento vertical */
+  }
+
+  .all {
+    width: 90%; /* Ajusta a largura do contêiner */
+    max-width: 400px; /* Define a largura máxima */
+  }
+
+  .containerInput {
+    width: 100%; /* Ajusta a largura do contêiner de entrada */
+  }
+}
+
+/* Para telas entre 576px e 767px (como smartphones em modo paisagem e tablets pequenos) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 16px; /* Tamanho da fonte um pouco maior */
+  }
+}
+
+/* Para telas entre 768px e 991px (como tablets maiores e laptops) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .all {
+    width: 80%; /* Reduz um pouco a largura do contêiner */
+    max-width: 600px; /* Define uma largura máxima maior */
+  }
+}
+
+/* Para telas entre 992px e 1199px (como laptops maiores e desktops menores) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 18px; /* Tamanho da fonte um pouco maior */
+  }
+}
+
+/* Para telas maiores que 1200px (como monitores grandes e desktops) */
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 20px; /* Tamanho da fonte maior */
+  }
+}

@@ -1,0 +1,99 @@
+/* Define as propriedades padrão para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Estiliza os links */
+a {
+  color: blue;
+}
+
+/* Estiliza o conteúdo principal */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Estiliza o seletor de temas */
+.temas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Estiliza as opções de ícones */
+.icon-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  transform: scale(1.3);
+  transition: transform 0.5s ease-in-out; 
+}
+
+.icon-options > .material-symbols-outlined {
+  padding-inline: 5px;
+}
+
+/* Estiliza os ícones */
+.material-symbols-outlined {
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.5s ease-in-out; 
+  transform-origin: center; 
+  
+}
+
+/* Estiliza o ícone selecionado */
+.material-symbols-outlined.selected {
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  transform: scale(1.1); 
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9); 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+/* Estiliza o ícone ao passar o mouse sobre ele */
+.material-symbols-outlined:hover {
+  transform: scale(1.2); 
+}
+
+/* Estiliza o botão de envio */
+.submit * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.3);
+  width: 280px;
+  height: 50px;
+}
+
+/* Estilo para o botão de login */
+.submit {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+#submit {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff; /* Cor do texto branco */
+  border: none; /* Remove a borda */
+  border-radius: 15px; /* Borda arredondada */
+  font-family: 'poppinsbold'; /* Fonte em negrito */
+  font-size: 20px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor do mouse */
+  transition: background-color 0.5s ease, transform 0.5s ease; /* Transições suaves */
+}

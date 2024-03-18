@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link id="css-link" rel="stylesheet" href="./styles/index.css">
+  <link id="css-link" rel="stylesheet" href="./styles/allStyles.css">
+  <!-- <link id="css-link" rel="stylesheet" href="./styles/responsiveTest.css"> -->
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <title>Faça seu Login! 😎✌️</title>
+  <script src="./src/main.js" defer></script>
+</head>
+<body>
+  <!-- Background -->
+  <section id="up"></section>
+  <section id="down"></section>
+  <section id="left"></section>
+  <section id="right"></section>
+  
+  <!-- Main content -->
+  <main>
+    <div class="all">
+      <!-- Logo -->
+      <div class="image">
+        <img src="./assets/images/polymer_FILL0_wght400_GRAD0_opsz24.svg" alt="logo">
+      </div>
+      
+      <!-- Title -->
+      <div class="title">
+        <h1>Olá!<br>Seja Bem-Vindo de Volta.</h1>
+      </div>
+      
+      <!-- Form -->
+      <form>
+        <!-- Username Input -->
+        <div class="campo">
+          <span class="material-symbols-outlined">person</span>
+          <div class="containerInput">
+            <input type="text" placeholder="" id="user">
+            <label for="user" class="custom-input">Nome do Usuário</label>
+          </div>
+        </div>
+        
+        <!-- Password Input -->
+        <div class="campo">
+          <span class="material-symbols-outlined">lock</span>
+          <div class="containerInput">
+            <input type="password" placeholder="" id="senha">
+            <label for="senha" class="custom-input">Sua Senha</label>
+            <button type="button" class="toggle-password" onclick="togglePasswordVisibility()"><i class="material-symbols-outlined">visibility</i></button>
+          </div>
+        </div>
+        <!-- Forgot Password -->
+        <div class="forgot">
+          <a href="#" id="forgot">Esqueceu a Senha?</a>
+        </div>
+      </form>
+      
+      <!-- Submit Button -->
+      <div class="submit">
+        <button type="submit" id="submit">Entrar</button>
+      </div>
+      
+      <!-- New Account Link -->
+      <div class="new">
+        <label for="">Ainda não tem uma conta? <a href="#">Crie Uma!</a></label>
+      </div>  
+    </div>
+    
+    <!-- Theme Selector -->
+    <div class="temas">
+      <label for="css-select">Escolha um estilo:</label>
+      <div class="icon-options">
+        <button class="material-symbols-outlined" onclick="changeCSS('./styles/index.css')">palette</button>
+        <button class="material-symbols-outlined" onclick="changeCSS('./styles/clearMode.css')">wb_sunny</button>
+        <button class="material-symbols-outlined" onclick="changeCSS('./styles/darkMode.css')">brightness_3</button>         
+      </div>
+    </div>
+  </main>
+</body>
+</html>
